@@ -1,0 +1,63 @@
+.large {
+    font-size: 50px;
+}
+
+.medium {
+    font-size: 40px;
+}
+
+.small {
+    font-size: 30px;
+}
+
+
+header {
+    text-align: center;
+}
+
+html {
+    text-shadow: 1px 2px 2px var(--secondary);
+    color: white;
+    background-color: pink;
+}
+
+#journalwelcome
+{
+    text-align:center;
+}
+
+.box-div
+{
+    font-size: 20px;
+    text-align: center;
+    width: 80vw;
+    height: 40vh;
+    margin: auto;
+    border: 5px solid white;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+button 
+{
+    background-color: white;
+    color: pink;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px #ff7aa6;
+    transition: .3s ease all;
+}
+
+.page-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70%;
+}
+
+button:hover 
+{
+    transition: .3s ease all;
+    transform: translateY(5px);
+}

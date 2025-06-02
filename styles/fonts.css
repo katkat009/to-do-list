@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+.coiny-regular 
+{
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+

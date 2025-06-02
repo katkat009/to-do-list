@@ -10,13 +10,10 @@
     <script src="todo.js"></script>
 
     <!-- styles -->
-    <link href="styles/style_todo.css" rel="stylesheet">
+    <link href="styles/todo.css" rel="stylesheet">
     <link href="styles/portals.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 
     <!-- icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
@@ -29,7 +26,7 @@
 
 
     <header class="medium">
-        Welcome back user!
+        ♡ Welcome back user! ♡
     </header>
 
     <main class="medium">
@@ -41,13 +38,12 @@
         </div>
 
         <div class="glass-div" id="portals">
-
             <p>Portals</p>
-            <button class="portal-button">Journal</button>
-            <button class="portal-button">Calender</button>
-            <button class="portal-button">Planner</button>
-            <button class="portal-button">Rewards</button>
-            <button class="portal-button">Goals</button>
+            <button onclick="toggleIframe('journal')" class="portal-button">Journal</button>
+            <button onclick="toggleIframe('calendar')" class="portal-button">Calender</button>
+            <button onclick="toggleIframe('planner')" class="portal-button">Planner</button>
+            <button onclick="toggleIframe('rewards')" class="portal-button">Rewards</button>
+            <button onclick="toggleIframe('goals')" class="portal-button">Goals</button>
         </div>
 
         <div class="glass-div" id="todo-list">
@@ -62,6 +58,13 @@
             <ul>
                 <li>Item</li>
             </ul>
+        </div>
+
+        <div class="portals">
+            <!-- Iframes -->
+
+            <iframe src="portals/journal.html" width="750px" height="400px" id="journal">
+
         </div>
 
         <article id="well-being">

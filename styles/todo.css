@@ -45,7 +45,7 @@ header {
     border: 2px solid white;
     padding: 0px;
     border-radius: 20px;
-    
+    transition: backdrop-filter 0.3s ease 0.1s;
 }
 
 .glass-div:hover
@@ -109,4 +109,16 @@ button:hover {
 #zero-margin {
     margin-left: auto;
     margin: 0px;
+}
+
+.portals
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#journal
+{
+    display:none;
+    border-radius: 20px;
 }
