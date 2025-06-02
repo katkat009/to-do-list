@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>My Organiser</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="todo.js"></script>
+
+    <!-- styles -->
+    <link href="styles/style_todo.css" rel="stylesheet">
+    <link href="styles/portals.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logos/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="coiny-regular margin">
+
+
+    <header class="medium">
+        Welcome back user!
+    </header>
+
+    <main class="medium">
+
+        <div class="glass-div">
+
+            <p>Beauty begins the moment you decide to be yourself.</p>
+
+        </div>
+
+        <div class="glass-div" id="portals">
+
+            <p>Portals</p>
+            <button class="portal-button">Journal</button>
+            <button class="portal-button">Calender</button>
+            <button class="portal-button">Planner</button>
+            <button class="portal-button">Rewards</button>
+            <button class="portal-button">Goals</button>
+        </div>
+
+        <div class="glass-div" id="todo-list">
+            <form>
+                <p class="small margin">Enter a new task?</p>
+                <input name="q" type="search">
+                <input type="submit" value="Enter!">
+            </form>
+
+            <p id="zero-margin">Current to do list: <br> Check off the tasks once completed!
+            </p>
+            <ul>
+                <li>Item</li>
+            </ul>
+        </div>
+
+        <article id="well-being">
+            </form>
+            <p>How are you feeling today?</p>
+            <label for="cb1">Bad</label>
+            <input name="feeling" type="radio">
+            <label for="cb2">Fine</label>
+            <input name="feeling" type="radio">
+            <label for="cb3">Good</label>
+            <input name="feeling" type="radio">
+            <label for="cb4">Amazing!</label>
+            <input name="feeling" type="radio">
+            </form>
+        </article>
+
+    </main>
+
+
+
+    <footer class="small">
+    </footer>
+
+    <button>
+        Check in for today!
+    </button>
+
+
+
+</body>
+
+</html>
