@@ -27,48 +27,57 @@
 
     <header class="medium">
         ♡ Welcome back user! ♡
+        <div class="glass" id="quote-container">
+            <p id="quote">Beauty begins the moment you decide to be yourself.</p>
+        </div>
     </header>
+
 
     <main class="medium">
 
-        <div class="glass-div">
-
-            <p>Beauty begins the moment you decide to be yourself.</p>
-
-        </div>
-
-        <div class="glass-div" id="portals">
+        <aside class="glass" id="portals">
             <p>Portals</p>
             <button onclick="toggleIframe('journal')" class="portal-button">Journal</button>
             <button onclick="toggleIframe('calendar')" class="portal-button">Calender</button>
             <button onclick="toggleIframe('planner')" class="portal-button">Planner</button>
             <button onclick="toggleIframe('rewards')" class="portal-button">Rewards</button>
             <button onclick="toggleIframe('goals')" class="portal-button">Goals</button>
-        </div>
+        </aside>
 
-        <div class="glass-div" id="todo-list">
+        <section class="glass" id="todo-list">
             <form>
                 <p class="small margin">Enter a new task?</p>
                 <input name="q" type="search">
                 <input type="submit" value="Enter!">
             </form>
 
-            <p id="zero-margin">Current to do list: <br> Check off the tasks once completed!
+            <p id="zero-margin">
+                Current to do list: <br> Check off the tasks once completed!
             </p>
+
             <ul>
                 <li>Item</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="portals">
+        <div class="portal-iframe-container">
             <!-- Iframes -->
-
-            <iframe src="portals/journal.html" width="750px" height="400px" id="journal">
-
+            <iframe class="portal-iframe" src="portals/calendar.html" id="calendar"></iframe>
+            <iframe class="portal-iframe" src="portals/planner.hmtl" id="planner"></iframe>
+            <iframe class="portal-iframe" src="portals/rewards.html" id="rewards"></iframe>
+            <iframe class="portal-iframe" src="portals/goals.html" id="goals"></iframe>
+            <iframe class="portal-iframe" src="portals/journal.html" id="journal"></iframe>
         </div>
+    </main>
 
+    <footer class="small">
+
+        <button>
+            Check in for today!
+        </button>
+        
         <article id="well-being">
-            </form>
+            <form>
             <p>How are you feeling today?</p>
             <label for="cb1">Bad</label>
             <input name="feeling" type="radio">
@@ -80,18 +89,8 @@
             <input name="feeling" type="radio">
             </form>
         </article>
-
-    </main>
-
-
-
-    <footer class="small">
+        
     </footer>
-
-    <button>
-        Check in for today!
-    </button>
-
 
 
 </body>
