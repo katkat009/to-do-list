@@ -1,12 +1,4 @@
-#portals
-{
-    border-color: var(--secondary);
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    width: 20%;
-    height: 600px;
-}
+
 
 .portal-button
 {

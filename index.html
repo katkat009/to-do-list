@@ -11,7 +11,6 @@
 
     <!-- styles -->
     <link href="styles/todo.css" rel="stylesheet">
-    <link href="styles/portals.css" rel="stylesheet">
     <link href="styles/fonts.css" rel="stylesheet">
 
 
@@ -22,76 +21,73 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="coiny-regular margin">
+<body class="coiny-regular">
 
+    <div class="grid-container">
+        <header class="medium quote-container">
+            ♡ Welcome back user! ♡
+            <div class="glass">
+                <p>Beauty begins the moment you decide to be yourself.</p>
+            </div>
+        </header>
+        <div class="portal-navigator">
+            <nav class="glass">
 
-    <header class="medium">
-        ♡ Welcome back user! ♡
-        <div class="glass" id="quote-container">
-            <p id="quote">Beauty begins the moment you decide to be yourself.</p>
+                <p>Portals</p>
+                <button onclick="toggleIframe('journal')" class="portal-button">Journal</button>
+                <button onclick="toggleIframe('calendar')" class="portal-button">Calender</button>
+                <button onclick="toggleIframe('planner')" class="portal-button">Planner</button>
+                <button onclick="toggleIframe('rewards')" class="portal-button">Rewards</button>
+                <button onclick="toggleIframe('goals')" class="portal-button">Goals</button>
+            </nav>
         </div>
-    </header>
-
-
-    <main class="medium">
-
-        <aside class="glass" id="portals">
-            <p>Portals</p>
-            <button onclick="toggleIframe('journal')" class="portal-button">Journal</button>
-            <button onclick="toggleIframe('calendar')" class="portal-button">Calender</button>
-            <button onclick="toggleIframe('planner')" class="portal-button">Planner</button>
-            <button onclick="toggleIframe('rewards')" class="portal-button">Rewards</button>
-            <button onclick="toggleIframe('goals')" class="portal-button">Goals</button>
-        </aside>
-
-        <section class="glass" id="todo-list">
-            <form>
-                <p class="small margin">Enter a new task?</p>
-                <input name="q" type="search">
-                <input type="submit" value="Enter!">
-            </form>
-
-            <p id="zero-margin">
-                Current to do list: <br> Check off the tasks once completed!
-            </p>
-
-            <ul>
-                <li>Item</li>
-            </ul>
-        </section>
-
-        <div class="portal-iframe-container">
+        <section class="portal-iframe-container">
             <!-- Iframes -->
             <iframe class="portal-iframe" src="portals/calendar.html" id="calendar"></iframe>
             <iframe class="portal-iframe" src="portals/planner.hmtl" id="planner"></iframe>
             <iframe class="portal-iframe" src="portals/rewards.html" id="rewards"></iframe>
             <iframe class="portal-iframe" src="portals/goals.html" id="goals"></iframe>
             <iframe class="portal-iframe" src="portals/journal.html" id="journal"></iframe>
-        </div>
-    </main>
+        </section>
 
-    <footer class="small">
+        <main class="medium">
+            <section class="glass todo-list">
+                <form>
+                    <p class="small margin">Enter a new task?</p>
+                    <input name="q" type="search">
+                    <input type="submit" value="Enter!">
+                </form>
 
-        <button>
-            Check in for today!
-        </button>
-        
-        <article id="well-being">
-            <form>
-            <p>How are you feeling today?</p>
-            <label for="cb1">Bad</label>
-            <input name="feeling" type="radio">
-            <label for="cb2">Fine</label>
-            <input name="feeling" type="radio">
-            <label for="cb3">Good</label>
-            <input name="feeling" type="radio">
-            <label for="cb4">Amazing!</label>
-            <input name="feeling" type="radio">
-            </form>
-        </article>
-        
-    </footer>
+                <p>
+                    Current to do list: <br> Check off the tasks once completed!
+                </p>
 
+                <ul>
+                    <li>Item</li>
+                </ul>
+            </section>
+            <button>
+                Check in for today!
+            </button>
+        </main>
+
+        <footer class="small">
+            <article class="well-being">
+                <form>
+                    <p>How are you feeling today?</p>
+                    <label for="cb1">Bad</label>
+                    <input name="feeling" type="radio">
+                    <label for="cb2">Fine</label>
+                    <input name="feeling" type="radio">
+                    <label for="cb3">Good</label>
+                    <input name="feeling" type="radio">
+                    <label for="cb4">Amazing!</label>
+                    <input name="feeling" type="radio">
+                </form>
+            </article>
+
+        </footer>
+    </div>
 
 </body>
 

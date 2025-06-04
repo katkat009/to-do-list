@@ -27,16 +27,6 @@ html {
     text-align:center;
 }
 
-.journal-container
-{
-    display: flex;
-    font-size: 2rem;
-    height: 100%;
-    justify-content: center;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
 button 
 {
     background-color: white;
@@ -45,14 +35,6 @@ button
     border-radius: 20px;
     border: 2px #ff7aa6;
     transition: .3s ease all;
-}
-
-.page-button
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70%;
 }
 
 button:hover 
